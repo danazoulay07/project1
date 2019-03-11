@@ -1,0 +1,130 @@
+body{ background-image: url("images/tile.jpg");
+}
+
+#board{
+    display: flex;
+    flex-wrap: wrap;
+    height: 280px;
+    margin-left: 45px;
+    margin-top: 45px
+}
+.paper{
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    padding: 35px 10px 10px 10px;
+    background-image: url("images/notebg.png");
+    font-family: Georgia, 'Times New Roman', Times, serif;     
+    animation: fadein 3s;
+     
+
+}
+.paper_task{
+    margin-top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100px;
+    width:150px;
+    word-wrap: break-word;
+    
+    overflow-y:auto;
+}
+
+#title{
+    margin: auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: auto;
+    text-align: center;
+    height: 40%;
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#task{
+    height: 40px;
+    width: 250px;
+    background-color:beige;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    margin-top:15px;
+   
+    
+}
+#date{
+    text-align: center;
+    height: 40px;
+    width: 175px;
+    background-color:beige;
+    color: black;
+    font-size: 17px;
+    margin-top:15px;
+}
+#time{
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    background-color: beige;
+    color: black;
+    font-size: 15px;
+    margin-top:10px;
+}
+h1{
+    text-align: center;
+padding-top: 15px;
+font-size: 30px;
+font-family: 'Permanent Marker',cursive;
+}
+#theform{
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    margin-left: auto;
+    background-image: url("images/formbg.jpg");
+
+}
+@keyframes fadeout {
+
+    from {
+
+        opacity: 0.85;
+
+    }
+
+    to {
+
+        opacity: 0;
+
+    }
+
+}
+
+
+
+@keyframes fadein {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+.glyphicon{
+cursor: pointer;
+margin-left: 135px;
+visibility: hidden;
+}
+.paper:hover .glyphicon {
+
+    visibility: visible;
+
+}
+
